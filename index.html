@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick y Morty API</title>
+
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body class="c-body">
+    <h1 class="c-main-title">Rick and Morty API</h1>
+
+    <form class="c-filter">
+        <div class="c-filter__filter-container">
+            <input id="f-name" placeholder="Name" class="c-filter__input">
+            <select id="f-status" class="c-filter__input">
+                <option value="" disabled selected>Status</option>
+                <option value="Alive">Alive</option>
+                <option value="Dead">Dead</option>
+                <option value="unknown">Unknown</option>
+            </select>
+            <input id="f-specie" placeholder="Specie" class="c-filter__input">
+            <input id="f-type" placeholder="Type" class="c-filter__input">
+            <select id="f-gender" class="c-filter__input">
+                <option value="" disabled selected>Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Genderless">Genderless</option>
+                <option value="unknown">Unknown</option>
+            </select>
+        </div>
+        <div class="c-filter__button-container">
+            <button class="c-button" id="button-filter">Filter</button>
+        </div>
+    </form>
+
+    <div class="card-container" id="main"></div>
+    <dialog class="c-character-detail" id="c-character-detail"></dialog>
+    <script type="module" src="js/dom.js"></script>
+</body>
+</html>

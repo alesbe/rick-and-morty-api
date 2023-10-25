@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+
+.c-body {
+    margin: 0;
+    font-family: 'Gabarito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.c-button {
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1.5rem;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.c-main-title {
+    font-size: 3rem;
+    margin: 50px;
+}
+
+.c-filter {
+    height: 100px;
+    width: 80%;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    /*margin: 30px;*/
+    box-shadow: 13px 11px 29px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.c-filter__filter-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.c-filter__input {
+    margin: 5px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    font-family: 'Gabarito', sans-serif;
+}
+
+.c-filter__button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.card-container {
+    display: grid;
+    /*grid-template-columns: 650px 650px;*/
+    grid-template-columns: repeat(auto-fit, 600px);
+    gap: 60px;
+    justify-content: center;
+    width: 100%;
+}
+
+.c-card {
+    display: flex;
+    flex-direction: row;
+    /*margin: 30px;*/
+    box-shadow: 13px 11px 29px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.c-card:hover {
+    transform: scale(1.02);
+}
+
+.c-card__text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+p {
+    margin: 5px;
+    margin-right: 2px;
+}
+
+.c-card__status-color {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.c-card__status-color--alive {
+    background-color: green;
+}
+.c-card__status-color--dead {
+    background-color: red;
+}
+.c-card__status-color--unknown {
+    background-color: orange;
+}
+
+.c-card__status-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.c-character-detail {
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+.c-character-detail__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.c-character-detail__image {
+    margin-left: 50px;
+    border-radius: 0 10px 10px 0;
+}
