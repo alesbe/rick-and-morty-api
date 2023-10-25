@@ -134,3 +134,33 @@ p {
     margin-left: 50px;
     border-radius: 0 10px 10px 0;
 }
+
+@media only screen and (max-width: 700px) {
+    .c-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .c-filter {
+        height: fit-content;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .c-card {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .c-main-title {
+        text-align: center;
+    }
+}
